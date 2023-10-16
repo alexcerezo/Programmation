@@ -8,7 +8,7 @@ using namespace std;
 int main() {
 
     int n = 5, r;
-    bool win = true;
+    bool win;
 
     while (n<10) {
         cout << "Enter the number of objects (10 min): ";

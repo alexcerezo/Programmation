@@ -14,14 +14,13 @@ int main() {
 
     while (c != '.' ) {
         if (c == 'a') {
-            h = 1;
+            h++;
         } 
         else if (h == 1 and c == 'b') {
-            h = 2;
+            h ++;
         } 
         else if (h == 2 and c == 'c') {
-        cout << "The string abc is in the sentence." << endl;
-        h = 3;
+        h++;
         break;
         } 
         else {
@@ -32,6 +31,9 @@ int main() {
     
     if (h != 3) {
         cout << "The string abc is not in the sentence." << endl;
+    } else {
+        cout << "The string abc is in the sentence." << endl;
     }
+
     return 0;
 }
