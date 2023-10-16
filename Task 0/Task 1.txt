@@ -1,0 +1,22 @@
+1. What is faster in execution, a low-level programming language or a high-level programming language?
+	A low-level langauge because there are less steps, but it's harder to program because you have to program intructions in 	assmebler. (Page 11)
+
+2. How many different values can be built with a nibble?
+	A nibble is a combination of four 0s or 1s, so the ammount of combinations is equal to 2^4=16. That means that there are 16 	different values. (Page 13, lines 3-4)
+
+3. What is greater, a 1 KB or 1Kb?
+	A kilobyte (KB) is equal to a 10^3 value, and a kilobyte (Kb) is equal to 2^10 value. Beacause of that fact, kilobytes (Kb) are 	greater than kilobytes (KB) as 10^3 = 1000 < 1024 = 2^10 . (Page 16)
+
+4. What kind of error are:
+	1. sin(x) = 33
+		The value of a sin(x) function can't be define because it isn't a variable.
+	2. x = sin(33
+		The sin() function returns a double value, because it is designed to be able to represent a wide range of values, 			including very small and very large values. So the correct way would be this:
+			double x = sin(33.0);
+		
+5. Is C an interpreted language?
+	No, owing to the fact that C needs a compilar to be executed. (Pages 81-86)
+
+6. Can you copy the files in here and compile and execute each of them? 
+	Yes, I can. I have also recorded a video executing then. 
+	Link: https://www.dropbox.com/scl/fi/eip9a3xt7ge05cqqxt69d/Task-1.mp4?rlkey=qmx2ixsk2oc449u1fjxacf8fl&dl=0
