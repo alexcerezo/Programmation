@@ -12,7 +12,7 @@ int main() {
     cout << "Enter a sentence (dot will end): ";
     cin.get(c);
 
-    while (c != '.' ) {
+    while (c != '.' and h != 3) {
         if (c == 'a') {
             h++;
         } 
@@ -21,7 +21,6 @@ int main() {
         } 
         else if (h == 2 and c == 'c') {
         h++;
-        break;
         } 
         else {
             h = 0;

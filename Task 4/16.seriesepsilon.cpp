@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
     
-    int s = 1, n, f = 1;
+    unsigned long long s = 1, n, f = 1;
     const int MAXPOW = 10;
     const float EPSILON = 0.000001;
 
@@ -19,7 +19,6 @@ int main() {
         f=f*i;
         if (pow(n,i)/f < EPSILON) {
             cout << "The series has converged.";
-            // avoid the use of return 0
             i = MAXPOW + 1;
         }
         s = s + pow(n,i)/f;

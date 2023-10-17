@@ -15,8 +15,8 @@ int main() {
     cin >> n;
 
     for (int i = 1; i <= MAXPOW; i++) {
-        f=f*i;
-        s = s + pow(n,i)/f;
+        f*=i;
+        s += pow(n,i)/f;
     }
 
     cout << s;
