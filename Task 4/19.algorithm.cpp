@@ -27,27 +27,17 @@ int main() {
         n = n - r;
         cout << "There are " << n << " objects." << endl;
 
-        if ((n-1)%4 == 1 and n > 1) {
-            win = true;
-            n = n-1;
+        if ( (n-1)%4 == 0) {
             cout << "The computer removes 1 object." << endl;
+            n = n - 1;
             cout << "There are " << n << " objects." << endl;
-        } else if ((n-1)%4 == 2 and n >= 2) {
-            win = true;
-            n = n-2;
-            cout << "The computer removes 2 object." << endl;
+        } else {
+            cout << "The computer removes " << (n-1)%4 << " object." << endl;
+            n = n - (n-1)%4;
             cout << "There are " << n << " objects." << endl;
-        } else if ((n-1)%4 == 3 and n >= 3) {
-            win = true;
-            n = n-3;
-            cout << "The computer removes 3 object." << endl;
-            cout << "There are " << n << " objects." << endl;
-        } else if ((n-1)%4 == 0 and n >= 4) {
-            win = true;
-            n = n-1;
-            cout << "The computer removes 1 object." << endl;
-            cout << "There are " << n << " objects." << endl;
-        } 
+        }
+        
+        win = true;
     }
 
     if (win) {

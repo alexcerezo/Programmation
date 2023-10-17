@@ -19,7 +19,6 @@ int main() {
         while ( i/2 >= helper) {
             if ( i % helper == 0 )  {
                 prime = false; 
-                break;
             }
             helper++;
         }

@@ -19,12 +19,15 @@ int main() {
         f=f*i;
         if (pow(n,i)/f < EPSILON) {
             cout << "The series has converged.";
-            return 0;
+            // avoid the use of return 0
+            i = MAXPOW + 1;
         }
         s = s + pow(n,i)/f;
     }
 
-    cout << s;
-
+    if (!(s==1)) {
+        cout << s;
+    }
+    
     return 0;
 }

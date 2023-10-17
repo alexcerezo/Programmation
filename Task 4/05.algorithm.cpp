@@ -20,7 +20,6 @@ int main() {
     while (s != 0) {
         if (s == n) {
             cout << "The number " << n << " is in the sequence" << endl;
-            return 0;
         }
         cin >> s;
     }

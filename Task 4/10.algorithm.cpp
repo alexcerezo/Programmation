@@ -12,15 +12,16 @@ int main() {
     cout << "Enter the number you want to know if it is a perfect square: ";
     cin >> n;
 
-    while (i<=n){
-        if (i*i == n){
-            cout << "The number " << n << " is a perfect square, and it's square root it's " << i << endl;
-            return 0;   
-        }
+    while (i*i<n){
         i++;
     }
 
+    if (i*i == n){
+        cout << "The number " << n << " is a perfect square, and it's square root it's " << i << endl;
+    } else {
     cout << "The number " << n << " is not a perfect square" << endl;
+    }
+
 
     return 0;
 }

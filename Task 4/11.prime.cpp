@@ -16,13 +16,15 @@ int main() {
         helper++;
         if (num % helper == 0 and helper != num) {
             cout << "The number is not prime because it's divisible by: " << helper << endl;
-            return 0;
+            helper = num;
         }
     }
 
     if (num == helper) {
         cout << "The number is prime." << endl;
     }
+    
 
     return 0;
 }
+
