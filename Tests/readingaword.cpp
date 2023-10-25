@@ -1,35 +1,46 @@
-// readingaword.cpp
+// readingasentence.cpp
 // Alejandro Cerezo Contreras 25-10-2023
 // Description
 
 #include <iostream>
 using namespace std;
 
-void reverseword(string word) {
+bool first = true;
+int i = 0;
 
-    for (int i = 0; i < word.length(); i++) {
-        if (word[i] == '.') {
-            word.erase(i, word.length() - i);
+
+void reversesentence(string sentence) {
+
+    while (i < sentence.length()) {
+        if (sentence[i] == '.') {
+            cout << "Frase o palabra al revés: " ;
+            sentence.erase(i, sentence.length() - i);
         }
+        i++;
     }
 
-    if (word.length() == 1) {
-        cout << word.back();
+    if (sentence.length() == 1) {
+        cout << sentence.back();
         return;
-    } else if (word.back() == '.') {
-        word.pop_back();
-        reverseword(word);
+    } else if (sentence.back() == '.') {
+        sentence.pop_back();
+        reversesentence(sentence);
     } else {
-        cout << word.back();
-        word.pop_back();
-        reverseword(word);
+        cout << sentence.back();
+        sentence.pop_back();
+        reversesentence(sentence);
     }
 }
 
 
 int main () {
-    string word ("hello world.hola.hola.");
-    reverseword(word);
+
+    string sentence;
+
+    cout << "Introduce una frase o palabra: ";
+    cin >> sentence;
+
+    reversesentence(sentence);
 
   return 0;
 }
